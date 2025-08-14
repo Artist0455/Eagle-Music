@@ -1,5 +1,10 @@
+services:
   - type: worker
     name: telegram-music-bot
     env: python
+    region: oregon  # or your preferred region
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python bot.py"
+    plan: free
+    repo: https://github.com/Artist0455/Artist- # <-- Apna repo URL daalein
+    branch: main  # ya jo bhi branch aap use kar rahe ho
